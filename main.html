@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>Bootstrap Carousel Example</title>
+    <style>
+        .first-slide { background-color: #f2a900; }
+        .second-slide { background-color: #00bfff; }
+        .third-slide { background-color: #ff69b4; }
+        .fourth-slide { background-color: #32cd32; }
+        .fifth-slide { background-color: #ff4500; }
+        .carousel-inner > .item > img { width: 100%; }
+    </style>
 </head>
 <body>
-    <!-- Write your code here -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner slide">
+            <div class="item first-slide">
+                <img src="https://via.placeholder.com/800x400?text=First+Slide" alt="First Slide">
+            </div>
+            <div class="item second-slide">
+                <img src="https://via.placeholder.com/800x400?text=Second+Slide" alt="Second Slide">
+            </div>
+            <div class="item third-slide active">
+                <img src="https://via.placeholder.com/800x400?text=Third+Slide" alt="Third Slide">
+            </div>
+            <div class="item fourth-slide">
+                <img src="https://via.placeholder.com/800x400?text=Fourth+Slide" alt="Fourth Slide">
+            </div>
+            <div class="item fifth-slide">
+                <img src="https://via.placeholder.com/800x400?text=Fifth+Slide" alt="Fifth Slide">
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
- 
 </html>
